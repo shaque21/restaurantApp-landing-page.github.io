@@ -198,6 +198,75 @@ a{
     color: rgba(0,0,0,0.8);
     font-size: 20px;
 }
+.about-us{
+    background-color: #f1f1f1;
+}
+.about-img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.about-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+.choose{
+    font-family: 'Satisfy', cursive;
+    color: #0be881;
+}
+.about-title{
+    padding: 10px 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: -5px -5px 10px rgba(255,255,255,0.9),
+            5px 5px 10px rgba(255,255,255,0.9), 
+            inset 0px 0px 10px rgba(0,0,0,0.2);
+}
+.address-head{
+    background-color: #424242;
+    color: #fff;
+    border-radius: 4px;
+}
+.address-head i{
+    padding: 8px 8px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+}
+.address-content{
+    line-height: 16px;
+}
+.muted-font{
+    font-size: 12px;
+}
+.address-icon{
+    font-size: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+}
+.address-content-card{
+    background-color: rgb(126, 255, 245,0.1);
+    /* border: none; */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1),
+                inset 0px 0px 15px rgba(255,255,255,0.9);
+}
+.custom-control{
+    color: #424242;
+    background-color: rgb(126, 255, 245,0.1);
+    border: 1px solid rgba(126, 255, 245, 1);
+    font-size: 16px;
+}
+.custom-control:focus{
+    background-color: rgb(126, 255, 245,0.1);
+    box-shadow: none;
+}
+.custom-label{
+    font-size: 14px;
+    color: rgba(0,0,0,0.8);
+}
 @media screen and (max-width: 991px) {
     .navbar-dark{
         background-color: #000 !important;
