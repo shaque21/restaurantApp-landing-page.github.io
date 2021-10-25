@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.title h4{
+    font-family: 'Satisfy', cursive;
+    color: #0be881;
+}
+.image{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.image img{
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+.banner-content{
+    padding: 80px;
+}
+#carouselExampleControls{
+    position: relative;
+}
+#carouselExampleControls .left{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    border: none;
+    background-color: #fff;
+}
+#carouselExampleControls .left:focus{
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+#carouselExampleControls .right:focus{
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+#carouselExampleControls .left i{
+    font-size: 20px;
+}
+#carouselExampleControls .right i{
+    font-size: 20px;
+}
+#carouselExampleControls .right{
+    position: absolute;
+    top: 80%;
+    left: 12%;
+    border: none;
+    background-color: #fff;
+}
+.navbar .navbar-brand{
+    color: #ffc048;
+    font-weight: 800;
+    transition: all 0.4s;
+    padding: 10px 30px;
+    /* font-size: 18px; */
+    /* font-family: 'Satisfy', cursive; */
+    transition: all 0.3s linear;
+    /* border: 2px solid #ffc048; */
+}
+.navbar .navbar-brand span{
+    font-size: 10px;
+}
+.navbar .navbar-brand:hover{
+    color: #ffc048;
+    /* background-color: #ffc048; */
+}
+
+.navbar-nav a{
+    
+    transition: all .3s linear;
+}
+.navbar-nav .active{
+    color:#ffc048 !important;
+}
+.navbar-nav a:hover{
+    width: 100% !important;
+    color: #ffc048 !important;
+}
+.btn-outline-warning:hover{
+    color: #fff;
+}
+.login{
+    padding: 5px 15px;
+    border: 2px solid #000;
+    color: #000;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s linear;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    letter-spacing: 1px;
+
+}
+.login::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: all 0.3s linear;
+    background-color: #000;
+}
+.login:hover{
+    color: #fff;
+}
+.login:hover::before{
+    transform: translateX(0);
+    z-index: -1;
+}
+.discover-menu .dropbtn{
+    background-color: #ffc048;
+    color: white;
+    padding: 8px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+}
+.discover-menu.dropdown {
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s linear;
+}
+  
+  /* Dropdown Content (Hidden by Default) */
+ .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: #f1f1f1;
+    min-width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: all 0.3s linear;
+}
+  
+  /* Links inside the dropdown */
+.discover-menu .dropdown-content a {
+    color: black;
+    padding: 12px 30px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s linear;
+}
+  
+  /* Change color of dropdown links on hover */
+ .dropdown .dropdown-content a:hover {
+    background-color: #fff;
+    color: #ffc048;
+}
+  
+  /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+.discover-menu.dropdown:hover .dropbtn {background-color: #3e8e41;}
+@media screen and (max-width: 991px) {
+    .navbar-dark{
+        background-color: #000 !important;
+    }
+    .signIn-btn{
+        margin-top: 10px !important;
+        margin-left: 0px !important;
+    }
+    .navbar-light .navbar-toggler{
+        margin-left: auto;
+        margin-right: 10px;
+    }
+    .navbar-light .navbar-toggler:focus{
+        box-shadow: none;
+    }
+    .navbar-collapse{
+        background-color: #f1f1f1;
+    }
+    .banner-content{
+        padding: 50px;
+    }
+    #carouselExampleControls .left{
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        border: none;
+        background-color: #fff;
+    }
+    #carouselExampleControls .left:focus{
+        border: none;
+        box-shadow: none;
+        outline: none;
+    }
+    #carouselExampleControls .right:focus{
+        border: none;
+        box-shadow: none;
+        outline: none;
+    }
+    #carouselExampleControls .left i{
+        font-size: 20px;
+    }
+    #carouselExampleControls .right i{
+        font-size: 20px;
+    }
+    #carouselExampleControls .right{
+        position: absolute;
+        top: 100%;
+        left: 55%;
+        border: none;
+        background-color: #fff;
+    }
+    
+}
+@media screen and (max-width: 768px){
+    .discover-menu{
+        margin-top: auto;
+    }
+}
+@media screen and (max-width: 576px){
+    #carouselExampleControls .left{
+        position: absolute;
+        top: 105%;
+        left: 46%;
+        border: none;
+        background-color: #fff;
+    }
+    #carouselExampleControls .left:focus{
+        border: none;
+        box-shadow: none;
+        outline: none;
+    }
+    #carouselExampleControls .right:focus{
+        border: none;
+        box-shadow: none;
+        outline: none;
+    }
+    #carouselExampleControls .left i{
+        font-size: 20px;
+    }
+    #carouselExampleControls .right i{
+        font-size: 20px;
+    }
+    #carouselExampleControls .right{
+        position: absolute;
+        top: 105%;
+        left: 55%;
+        border: none;
+        background-color: #fff;
+    }
+}
