@@ -24,7 +24,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0 text-center">
               <li class="nav-item">
                 <a class="nav-link active" href="#">Home</a>
               </li>
@@ -41,7 +41,7 @@
             </ul>
             
           </div>
-          <div class="d-flex"> 
+          <div class="d-flex my-2 ms-2"> 
             <a class="login me-2 " href="">
             <i class="fas fa-paper-plane me-2"></i>  Login
             </a>
@@ -140,15 +140,15 @@
     <div class="container-fluid my-sm-3 discover-menu">
       <div class="container d-flex justify-content-center align-items-center">
         <div class="dropdown">
-          <button class="dropbtn">
-            Discover Menu &nbsp;&nbsp;&nbsp;<i class="fas fa-chevron-circle-down"></i>
+          <button class="dropbtn dropdown-toggle" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            Discover Menu 
           </button>
-          <div class="dropdown-content">
-            <a href="#">All Category</a>
-            <a href="#">Chicken Noodles</a>
-            <a href="#">BBQ Pizza</a>
-            <a href="#">Fried Rice</a>
-            <a href="#">Popular Items</a>
+          <div class="dropdown-content dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="buttons dropdown-item" data-filter="all" href="#">All Category</a>
+            <a class="buttons dropdown-item" data-filter="chicken" href="#">Chicken</a>
+            <a class="buttons dropdown-item" data-filter="pizza" href="#">Pizza</a>
+            <a class="buttons dropdown-item" data-filter="burger" href="#">Burger</a>
+            <a class="buttons dropdown-item" data-filter="popular" href="#">Popular Items</a>
           </div>
         </div>
       </div>
@@ -158,88 +158,303 @@
     <!-- Category section -->
     <div class="container-fluid menu-section">
       <div class="container mb-4 "> 
-          <div class="row d-flex flex-wrap">
-            <h2 class="my-5 category-div burger">Burger</h2>
-            <div class="col-lg-3 col-md-4 col-sm-6 category-div burger" data-bs-toggle="modal" data-bs-target="#itemModal" >
-              <div class="card mb-3 item-cart p-4">
-                <div class="row">
-                  <div class="col-8 cart-content">
-                    <p class="card-title">Jamboo Burger</p>
-                    <p class="starting text-muted">Starting From</p>
-                    <p class="card-text">$ 150.00</p>
+        <div class="row d-flex flex-wrap">
+          <h2 class="my-5 category-div popular">Popular Items <i class="fas fa-fire-alt text-danger"></i></h2>
+          <div class="col-lg-3 col-md-4 col-sm-6 category-div popular" data-bs-toggle="modal" data-bs-target="#itemModal" >
+            <div class="card mb-3 item-cart p-4">
+              <div class="row">
+                <div class="col-8 cart-content">
+                  <p class="card-title">Jamboo Burger</p>
+                  <p class="starting text-muted">Starting From</p>
+                  <p class="card-text">$ 150.00</p>
+                </div>
+                <div class="col-4 item-img-section">
+                  <div class="item-img">
+                    <img src="images/item/b1.png" alt="...">
                   </div>
-                  <div class="col-4 item-img-section">
-                    <div class="item-img">
-                      <img src="images/item/b1.png" alt="...">
-                    </div>
-                    <div class="item-add-btn mt-5">
-                      <a href="">
-                        <i class="fas fa-plus-circle"></i>
-                      </a>
-                    </div>
+                  <div class="item-add-btn mt-5">
+                    <a href="">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 category-div burger" data-bs-toggle="modal" data-bs-target="#itemModal" >
-              <div class="card mb-3 item-cart p-4">
-                <div class="row">
-                  <div class="col-8 cart-content">
-                    <p class="card-title">Jamboo Burger</p>
-                    <p class="starting text-muted">Starting From</p>
-                    <p class="card-text">$ 150.00</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 category-div popular" data-bs-toggle="modal" data-bs-target="#itemModal" >
+            <div class="card mb-3 item-cart p-4">
+              <div class="row">
+                <div class="col-8 cart-content">
+                  <p class="card-title">Chicken Fry</p>
+                  <p class="starting text-muted">Starting From</p>
+                  <p class="card-text">$ 150.00</p>
+                </div>
+                <div class="col-4 item-img-section">
+                  <div class="item-img">
+                    <img src="images/item/c1.png" alt="...">
                   </div>
-                  <div class="col-4 item-img-section">
-                    <div class="item-img">
-                      <img src="images/item/c1.png" alt="...">
-                    </div>
-                    <div class="item-add-btn mt-5">
-                      <a href="">
-                        <i class="fas fa-plus-circle"></i>
-                      </a>
-                    </div>
+                  <div class="item-add-btn mt-5">
+                    <a href="">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 category-div burger" data-bs-toggle="modal" data-bs-target="#itemModal" >
-              <div class="card mb-3 item-cart p-4">
-                <div class="row">
-                  <div class="col-8 cart-content">
-                    <p class="card-title">Jamboo Burger</p>
-                    <p class="starting text-muted">Starting From</p>
-                    <p class="card-text">$ 150.00</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 category-div popular" data-bs-toggle="modal" data-bs-target="#itemModal" >
+            <div class="card mb-3 item-cart p-4">
+              <div class="row">
+                <div class="col-8 cart-content">
+                  <p class="card-title">Salmon Fry</p>
+                  <p class="starting text-muted">Starting From</p>
+                  <p class="card-text">$ 150.00</p>
+                </div>
+                <div class="col-4 item-img-section">
+                  <div class="item-img">
+                    <img src="images/bg/bg4.png" alt="...">
                   </div>
-                  <div class="col-4 item-img-section">
-                    <div class="item-img">
-                      <img src="images/bg/bg4.png" alt="...">
-                    </div>
-                    <div class="item-add-btn mt-5">
-                      <a href="">
-                        <i class="fas fa-plus-circle"></i>
-                      </a>
-                    </div>
+                  <div class="item-add-btn mt-5">
+                    <a href="">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 category-div burger" data-bs-toggle="modal" data-bs-target="#itemModal" >
-              <div class="card mb-3 item-cart p-4">
-                <div class="row">
-                  <div class="col-8 cart-content">
-                    <p class="card-title">Jamboo Burger</p>
-                    <p class="starting text-muted">Starting From</p>
-                    <p class="card-text">$ 150.00</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 category-div popular" data-bs-toggle="modal" data-bs-target="#itemModal" >
+            <div class="card mb-3 item-cart p-4">
+              <div class="row">
+                <div class="col-8 cart-content">
+                  <p class="card-title">Chicken Kacchi</p>
+                  <p class="starting text-muted">Starting From</p>
+                  <p class="card-text">$ 150.00</p>
+                </div>
+                <div class="col-4 item-img-section">
+                  <div class="item-img">
+                    <img src="images/bg/bg7.png" alt="...">
                   </div>
-                  <div class="col-4 item-img-section">
-                    <div class="item-img">
-                      <img src="images/bg/bg7.png" alt="...">
-                    </div>
-                    <div class="item-add-btn mt-5">
-                      <a href="">
-                        <i class="fas fa-plus-circle"></i>
-                      </a>
-                    </div>
+                  <div class="item-add-btn mt-5">
+                    <a href="">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 category-div popular" data-bs-toggle="modal" data-bs-target="#itemModal" >
+            <div class="card item-cart p-4">
+              <div class="row">
+                <div class="col-8 cart-content">
+                  <p class="card-title">Jamboo Burger</p>
+                  <p class="starting text-muted">Starting From</p>
+                  <p class="card-text">$ 150.00</p>
+                </div>
+                <div class="col-4 item-img-section">
+                  <div class="item-img">
+                    <img src="images/item/c1.png" alt="...">
+                  </div>
+                  <div class="item-add-btn mt-5">
+                    <a href="">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex flex-wrap">
+          <h2 class="my-5 category-div chicken">Chicken</h2>
+          <div class="col-lg-3 col-md-4 col-sm-6 category-div chicken" data-bs-toggle="modal" data-bs-target="#itemModal" >
+            <div class="card mb-3 item-cart p-4">
+              <div class="row">
+                <div class="col-8 cart-content">
+                  <p class="card-title">BBQ Chicken</p>
+                  <p class="starting text-muted">Starting From</p>
+                  <p class="card-text">$ 120.00</p>
+                </div>
+                <div class="col-4 item-img-section">
+                  <div class="item-img">
+                    <img src="images/item/b1.png" alt="...">
+                  </div>
+                  <div class="item-add-btn mt-5">
+                    <a href="">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 category-div chicken" data-bs-toggle="modal" data-bs-target="#itemModal" >
+            <div class="card mb-3 item-cart p-4">
+              <div class="row">
+                <div class="col-8 cart-content">
+                  <p class="card-title">BBQ Chicken</p>
+                  <p class="starting text-muted">Starting From</p>
+                  <p class="card-text">$ 150.00</p>
+                </div>
+                <div class="col-4 item-img-section">
+                  <div class="item-img">
+                    <img src="images/item/c1.png" alt="...">
+                  </div>
+                  <div class="item-add-btn mt-5">
+                    <a href="">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 category-div chicken" data-bs-toggle="modal" data-bs-target="#itemModal" >
+            <div class="card mb-3 item-cart p-4">
+              <div class="row">
+                <div class="col-8 cart-content">
+                  <p class="card-title">BBQ Chicken</p>
+                  <p class="starting text-muted">Starting From</p>
+                  <p class="card-text">$ 150.00</p>
+                </div>
+                <div class="col-4 item-img-section">
+                  <div class="item-img">
+                    <img src="images/bg/bg4.png" alt="...">
+                  </div>
+                  <div class="item-add-btn mt-5">
+                    <a href="">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 category-div chicken" data-bs-toggle="modal" data-bs-target="#itemModal" >
+            <div class="card mb-3 item-cart p-4">
+              <div class="row">
+                <div class="col-8 cart-content">
+                  <p class="card-title">BBQ Chicken</p>
+                  <p class="starting text-muted">Starting From</p>
+                  <p class="card-text">$ 150.00</p>
+                </div>
+                <div class="col-4 item-img-section">
+                  <div class="item-img">
+                    <img src="images/bg/bg7.png" alt="...">
+                  </div>
+                  <div class="item-add-btn mt-5">
+                    <a href="">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 category-div chicken" data-bs-toggle="modal" data-bs-target="#itemModal" >
+            <div class="card item-cart p-4">
+              <div class="row">
+                <div class="col-8 cart-content">
+                  <p class="card-title">BBQ Chicken</p>
+                  <p class="starting text-muted">Starting From</p>
+                  <p class="card-text">$ 150.00</p>
+                </div>
+                <div class="col-4 item-img-section">
+                  <div class="item-img">
+                    <img src="images/item/c1.png" alt="...">
+                  </div>
+                  <div class="item-add-btn mt-5">
+                    <a href="">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex flex-wrap">
+          <h2 class="my-5 category-div burger">Burger</h2>
+          <div class="col-lg-3 col-md-4 col-sm-6 category-div burger" data-bs-toggle="modal" data-bs-target="#itemModal" >
+            <div class="card mb-3 item-cart p-4">
+              <div class="row">
+                <div class="col-8 cart-content">
+                  <p class="card-title">Jamboo Burger</p>
+                  <p class="starting text-muted">Starting From</p>
+                  <p class="card-text">$ 150.00</p>
+                </div>
+                <div class="col-4 item-img-section">
+                  <div class="item-img">
+                    <img src="images/item/b1.png" alt="...">
+                  </div>
+                  <div class="item-add-btn mt-5">
+                    <a href="">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 category-div burger" data-bs-toggle="modal" data-bs-target="#itemModal" >
+            <div class="card mb-3 item-cart p-4">
+              <div class="row">
+                <div class="col-8 cart-content">
+                  <p class="card-title">Jamboo Burger</p>
+                  <p class="starting text-muted">Starting From</p>
+                  <p class="card-text">$ 150.00</p>
+                </div>
+                <div class="col-4 item-img-section">
+                  <div class="item-img">
+                    <img src="images/item/c1.png" alt="...">
+                  </div>
+                  <div class="item-add-btn mt-5">
+                    <a href="">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 category-div burger" data-bs-toggle="modal" data-bs-target="#itemModal" >
+            <div class="card mb-3 item-cart p-4">
+              <div class="row">
+                <div class="col-8 cart-content">
+                  <p class="card-title">Jamboo Burger</p>
+                  <p class="starting text-muted">Starting From</p>
+                  <p class="card-text">$ 150.00</p>
+                </div>
+                <div class="col-4 item-img-section">
+                  <div class="item-img">
+                    <img src="images/bg/bg4.png" alt="...">
+                  </div>
+                  <div class="item-add-btn mt-5">
+                    <a href="">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 category-div burger" data-bs-toggle="modal" data-bs-target="#itemModal" >
+            <div class="card mb-3 item-cart p-4">
+              <div class="row">
+                <div class="col-8 cart-content">
+                  <p class="card-title">Jamboo Burger</p>
+                  <p class="starting text-muted">Starting From</p>
+                  <p class="card-text">$ 150.00</p>
+                </div>
+                <div class="col-4 item-img-section">
+                  <div class="item-img">
+                    <img src="images/bg/bg7.png" alt="...">
+                  </div>
+                  <div class="item-add-btn mt-5">
+                    <a href="">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -266,54 +481,119 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="row d-flex flex-wrap">
+          <h2 class="my-5 category-div pizza">Pizza</h2>
+          <div class="col-lg-3 col-md-4 col-sm-6 category-div pizza" data-bs-toggle="modal" data-bs-target="#itemModal" >
+            <div class="card mb-3 item-cart p-4">
+              <div class="row">
+                <div class="col-8 cart-content">
+                  <p class="card-title">Chicken Chese Pizza</p>
+                  <p class="starting text-muted">Starting From</p>
+                  <p class="card-text">$ 150.00</p>
+                </div>
+                <div class="col-4 item-img-section">
+                  <div class="item-img">
+                    <img src="images/item/p1.png" alt="...">
+                  </div>
+                  <div class="item-add-btn mt-5">
+                    <a href="">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 category-div pizza" data-bs-toggle="modal" data-bs-target="#itemModal" >
+            <div class="card mb-3 item-cart p-4">
+              <div class="row">
+                <div class="col-8 cart-content">
+                  <p class="card-title">Chicken Chese Pizza</p>
+                  <p class="starting text-muted">Starting From</p>
+                  <p class="card-text">$ 150.00</p>
+                </div>
+                <div class="col-4 item-img-section">
+                  <div class="item-img">
+                    <img src="images/item/c1.png" alt="...">
+                  </div>
+                  <div class="item-add-btn mt-5">
+                    <a href="">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 category-div pizza" data-bs-toggle="modal" data-bs-target="#itemModal" >
+            <div class="card mb-3 item-cart p-4">
+              <div class="row">
+                <div class="col-8 cart-content">
+                  <p class="card-title">Chicken Chese Pizza</p>
+                  <p class="starting text-muted">Starting From</p>
+                  <p class="card-text">$ 150.00</p>
+                </div>
+                <div class="col-4 item-img-section">
+                  <div class="item-img">
+                    <img src="images/item/p1.png" alt="...">
+                  </div>
+                  <div class="item-add-btn mt-5">
+                    <a href="">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 category-div pizza" data-bs-toggle="modal" data-bs-target="#itemModal" >
+            <div class="card mb-3 item-cart p-4">
+              <div class="row">
+                <div class="col-8 cart-content">
+                  <p class="card-title">Chicken Chese Pizza</p>
+                  <p class="starting text-muted">Starting From</p>
+                  <p class="card-text">$ 150.00</p>
+                </div>
+                <div class="col-4 item-img-section">
+                  <div class="item-img">
+                    <img src="images/bg/bg7.png" alt="...">
+                  </div>
+                  <div class="item-add-btn mt-5">
+                    <a href="">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 category-div pizza" data-bs-toggle="modal" data-bs-target="#itemModal" >
+            <div class="card item-cart p-4">
+              <div class="row">
+                <div class="col-8 cart-content">
+                  <p class="card-title">Chicken Chese Pizza</p>
+                  <p class="starting text-muted">Starting From</p>
+                  <p class="card-text">$ 550.00</p>
+                </div>
+                <div class="col-4 item-img-section">
+                  <div class="item-img">
+                    <img src="images/item/c1.png" alt="...">
+                  </div>
+                  <div class="item-add-btn mt-5">
+                    <a href="">
+                      <i class="fas fa-plus-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
   </div>
     <!-- end Category section -->
-    <!-- Item Details Modal -->
-    <div class="modal fade" id="itemModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content">
-          <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Jamboo Burger</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <div class="row">
-                  <div class="col-md-5">
-                      <div class="card mb-3">
-                          <div class="item-img">
-                              <img src="images/burger1.jpg" class="card-img-top" alt="...">
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-7 p-4">
-                      <div class="card">
-                          <div class="card-body">
-                              <p class="card-text"><small class="text-muted">Price : $ 150</small></p>
-                              <h5 class="card-title my-3">Description : </h5>
-                              <p class="card-text my-1">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                              <div class="item-form my-3">
-                                  <form action="">
-                                      <div class="mb-5 ms-4">
-                                          <label for="quantity" class="form-label">Quantity </label>
-                                          <input type="number" class="form-control item-form-control form-control-sm" id="quantity" name="quantity" >
-                                      </div>
-                                      <div class="my-4 text-center">
-                                          <button type="submit" class="item-modal-btn">
-                                              <i class="bi bi-cart-plus"></i>
-                                              Add To Cart
-                                          </button>
-                                      </div>
-                                  </form>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      </div>
-  </div>
+
 
     <!-- <footer class="my-4 bg-danger">
       <div class="container">
@@ -324,8 +604,9 @@
           </div>
       </div>
   </footer> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript">
+    <script>
       var nav = document.querySelector('nav');
 
       window.addEventListener('scroll', function () {
@@ -335,6 +616,27 @@
           nav.classList.remove('bg-white', 'shadow');
         }
       });
+
+      $(document).ready(function(){
+
+        $('.buttons').click(function(e){
+
+            e.preventDefault();
+
+            // $(this).addClass('active').siblings().removeClass('active');
+
+            const filter = $(this).attr('data-filter')
+
+            if(filter == 'all'){
+                $('.category-div').show();
+            }else{
+                $('.category-div').not('.'+filter).hide();
+                $('.category-div').filter('.'+filter).show();
+            }
+
+        });
+
+});
     </script>
   </body>
 </html>
