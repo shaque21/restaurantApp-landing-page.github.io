@@ -1,4 +1,4 @@
-# bootstrap-transparent-navbar
-Bootstrap 5 - Responsive Transparent Navbar,  Fixed Top on Scroll Web Page
+# bootstrap-RestaurantApp Landing page
+Bootstrap 5 Landing Page
 
-[Demo](https://skcals.github.io/bootstrap-transparent-navbar/)
+[Demo](https://shaque21.github.io/restaurantApp-landing-page.github.io/)
