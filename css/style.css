@@ -8,11 +8,25 @@
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 a{
     text-decoration: none;
 }
-
+.shopping-cart{
+    position: relative;
+}
+.notification{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #ff3f34;
+    color: #fff;
+    position: absolute;
+    top: -15%;
+    right: -15%;
+}
 .title h4{
     font-family: 'Satisfy', cursive;
     color: #0be881;
